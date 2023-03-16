@@ -12,11 +12,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(37, 37, 37);    
+    background: rgb(37, 37, 37); 
+}
+
+#mainContainer {
+    /* 1st value for top and bottom. 2nd value for left and right */
+    margin: 0 3rem;
+   text-align: center;
+}
+
+h3 {
+    /* display: inline; */
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Style the button container */
 .buttonContainer {
+    margin-left: 42%;
+    margin-right: 42%;
     border: 2px solid black;
     padding: 10px;
     border-radius: 7px;
@@ -47,4 +61,20 @@ button:hover {
 button:active {
     transform: translateY(3px);
     box-shadow: 0 6px  6px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* For Tablet or smaller devices ie. phones. */
+@media screen and (max-width: 600px) {
+
+    #noticeMobile {
+        display: block;
+    }
+
+    #txtDesktop {
+        display: none;
+    }
+
+    .buttonContainer {
+        margin: 0 4.5rem;
+    }
 }
