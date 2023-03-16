@@ -64,7 +64,7 @@ button:active {
 }
 
 /* For Tablet or smaller devices ie. phones. */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 
     #noticeMobile {
         display: block;
